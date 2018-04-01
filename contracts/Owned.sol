@@ -6,7 +6,7 @@ contract Owned {
 	address public pendingOwner;
 
 	// constructor //
-	function Owned() {
+	function Owned() public {
 		currentOwner = msg.sender;
 	}
 
@@ -17,26 +17,31 @@ contract Owned {
 		}
 	}
 
-	modifer onlyPendingOwner(){
+	modifier onlyPendingOwner(){
 		if (pendingOwner == msg.sender) {
 			_;
 		}
 	}
 
 	// methods //
-	function changeOwnership(address _to) onlyOwner returns(bool){
+	function changeOwnership(address _to) onlyOwner public returns(bool){
 		pendingOwner = _to;
 		return true;
 	}
 
-	function claimOwnership() onlyPendingOwner returns(bool){
-		contractOwner = pendingContractOwner;
+	function claimOwnership() onlyPendingOwner public returns(bool){
+		currentOwner = pendingOwner;
 		return true;
 	}
 
-	function forceChangeOwnership(address _to) onlyOwner returns(bool) {
-		contractOwner = _to;
+	function forceChangeOwnership(address _to) onlyOwner public returns(bool) {
+		currentOwner = _to;
 		return true;
+	}
+
+	// Getters //
+	function getOwner() public view returns(address){
+		return currentOwner;
 	}
 
 }

@@ -1,8 +1,10 @@
 pragma solidity ^0.4.18;
 
-contract Asset{
+import "./Owned.sol";
+
+contract Asset is Owned{
 	
-	function Asset(){
+	function Asset() public{
 		//TODO
 	}
 
