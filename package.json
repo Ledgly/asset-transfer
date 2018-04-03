@@ -1,0 +1,28 @@
+{
+  "name": "asset-transfer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/js/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ledgly/asset-transfer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ledgly/asset-transfer/issues"
+  },
+  "homepage": "https://github.com/Ledgly/asset-transfer#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3",
+    "truffle-contract": "^3.0.4",
+    "web3": "^1.0.0-beta.33"
+  }
+}
