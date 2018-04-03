@@ -20,8 +20,8 @@ app.get('/', function(req, res){
 })
 
 app.get('/Asset.json', function(req, res){
-	var readable = fs.createReadStream(contractJSON);
-    readable.pipe(res);
+	var readable = fs.createReadStream(contractJSON)
+    readable.pipe(res)
 })
 
 // start server //

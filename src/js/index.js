@@ -9,11 +9,8 @@ if (typeof web3 !== 'undefined') {
 }
 
 $.getJSON('../Asset.json', function(data){
-	abi = data;
+	abi = data['abi'];
+	TradingContract = web3.eth.contract(abi);
+	contractInstance = TradingContract.at('0xf6e3b6936db073b7283920378eaececb9d601f58');
+	console.log(contractInstance)
 });
-
-TradingContract = web3.eth.contract(abi);
-
-contractInstance = TradingContract.at('0xf6e3b6936db073b7283920378eaececb9d601f58');
-
-console.log(web3Provider.currentProvider);
