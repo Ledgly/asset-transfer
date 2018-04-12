@@ -84,6 +84,20 @@
     {
       "constant": true,
       "inputs": [],
+      "name": "uuid",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
       "name": "pendingOwner",
       "outputs": [
         {
@@ -96,26 +110,31 @@
       "type": "function"
     },
     {
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "_uuid",
+          "type": "bytes32"
+        }
+      ],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "constructor"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506104f08061005e6000396000f300606060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632af4c31e1461007d5780634e71e0c8146100ce5780636fa17825146100fb578063893d20e81461014c578063b387ef92146101a1578063e30c3978146101f6575b600080fd5b341561008857600080fd5b6100b4600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061024b565b604051808215151515815260200191505060405180910390f35b34156100d957600080fd5b6100e16102ed565b604051808215151515815260200191505060405180910390f35b341561010657600080fd5b610132600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506103af565b604051808215151515815260200191505060405180910390f35b341561015757600080fd5b61015f610450565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101ac57600080fd5b6101b4610479565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561020157600080fd5b61020961049e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60003373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156102e85781600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b919050565b60003373ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156103ac57600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b90565b60003373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561044b57816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b919050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058204a79eb951e4f7202209225f11234eb12306532c9015e2bfadf4a7c336a18563f0029",
-  "deployedBytecode": "0x606060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632af4c31e1461007d5780634e71e0c8146100ce5780636fa17825146100fb578063893d20e81461014c578063b387ef92146101a1578063e30c3978146101f6575b600080fd5b341561008857600080fd5b6100b4600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061024b565b604051808215151515815260200191505060405180910390f35b34156100d957600080fd5b6100e16102ed565b604051808215151515815260200191505060405180910390f35b341561010657600080fd5b610132600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506103af565b604051808215151515815260200191505060405180910390f35b341561015757600080fd5b61015f610450565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101ac57600080fd5b6101b4610479565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561020157600080fd5b61020961049e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60003373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156102e85781600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b919050565b60003373ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156103ac57600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b90565b60003373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561044b57816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b919050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058204a79eb951e4f7202209225f11234eb12306532c9015e2bfadf4a7c336a18563f0029",
-  "sourceMap": "49:67:0:-;;;77:36;;;;;;;;169:10:1;154:12;;:25;;;;;;;;;;;;;;;;;;49:67:0;;;;;;",
-  "deployedSourceMap": "49:67:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;369:109:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;481:113;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;597:115;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;730:75;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;46:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;76;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;369:109;432:4;246:10;230:26;;:12;;;;;;;;;;;:26;;;226:42;;;456:3;441:12;;:18;;;;;;;;;;;;;;;;;;470:4;463:11;;226:42;369:109;;;:::o;481:113::-;539:4;325:10;309:26;;:12;;;;;;;;;;;:26;;;305:43;;;563:12;;;;;;;;;;;548;;:27;;;;;;;;;;;;;;;;;;586:4;579:11;;305:43;481:113;:::o;597:115::-;665:4;246:10;230:26;;:12;;;;;;;;;;;:26;;;226:42;;;690:3;675:12;;:18;;;;;;;;;;;;;;;;;;704:4;697:11;;226:42;597:115;;;:::o;730:75::-;770:7;789:12;;;;;;;;;;;782:19;;730:75;:::o;46:27::-;;;;;;;;;;;;;:::o;76:::-;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.18;\n\nimport \"./Owned.sol\";\n\ncontract Asset is Owned{\n\t\n\tfunction Asset() public{\n\t\t//TODO\n\t}\n\n}",
+  "bytecode": "0x60606040527f7575696400000000000000000000000000000000000000000000000000000000600290600019169055341561003957600080fd5b6040516020806105e283398101604052808051906020019091905050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806002816000191690555050610532806100b06000396000f300606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632af4c31e146100885780634e71e0c8146100d95780636fa1782514610106578063893d20e814610157578063b387ef92146101ac578063bb07e85d14610201578063e30c397814610232575b600080fd5b341561009357600080fd5b6100bf600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610287565b604051808215151515815260200191505060405180910390f35b34156100e457600080fd5b6100ec610329565b604051808215151515815260200191505060405180910390f35b341561011157600080fd5b61013d600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506103eb565b604051808215151515815260200191505060405180910390f35b341561016257600080fd5b61016a61048c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101b757600080fd5b6101bf6104b5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561020c57600080fd5b6102146104da565b60405180826000191660001916815260200191505060405180910390f35b341561023d57600080fd5b6102456104e0565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60003373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156103245781600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b919050565b60003373ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156103e857600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b90565b60003373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561048757816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b919050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058209906ae23184a18eea0f4db0b111f0e1c56f66a37fad3972bf975575afb8a71bb0029",
+  "deployedBytecode": "0x606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632af4c31e146100885780634e71e0c8146100d95780636fa1782514610106578063893d20e814610157578063b387ef92146101ac578063bb07e85d14610201578063e30c397814610232575b600080fd5b341561009357600080fd5b6100bf600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610287565b604051808215151515815260200191505060405180910390f35b34156100e457600080fd5b6100ec610329565b604051808215151515815260200191505060405180910390f35b341561011157600080fd5b61013d600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506103eb565b604051808215151515815260200191505060405180910390f35b341561016257600080fd5b61016a61048c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101b757600080fd5b6101bf6104b5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561020c57600080fd5b6102146104da565b60405180826000191660001916815260200191505060405180910390f35b341561023d57600080fd5b6102456104e0565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60003373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156103245781600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b919050565b60003373ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156103e857600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b90565b60003373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561048757816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600190505b919050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058209906ae23184a18eea0f4db0b111f0e1c56f66a37fad3972bf975575afb8a71bb0029",
+  "sourceMap": "49:213:0:-;;;77:28;;;;;;;;203:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;169:10:1;154:12;;:25;;;;;;;;;;;;;;;;;;250:5:0;243:4;:12;;;;;;;203:56;49:213;;;;;;",
+  "deployedSourceMap": "49:213:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;369:109:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;481:113;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;597:115;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;730:75;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;46:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;77:28:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;76:27:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;369:109;432:4;246:10;230:26;;:12;;;;;;;;;;;:26;;;226:42;;;456:3;441:12;;:18;;;;;;;;;;;;;;;;;;470:4;463:11;;226:42;369:109;;;:::o;481:113::-;539:4;325:10;309:26;;:12;;;;;;;;;;;:26;;;305:43;;;563:12;;;;;;;;;;;548;;:27;;;;;;;;;;;;;;;;;;586:4;579:11;;305:43;481:113;:::o;597:115::-;665:4;246:10;230:26;;:12;;;;;;;;;;;:26;;;226:42;;;690:3;675:12;;:18;;;;;;;;;;;;;;;;;;704:4;697:11;;226:42;597:115;;;:::o;730:75::-;770:7;789:12;;;;;;;;;;;782:19;;730:75;:::o;46:27::-;;;;;;;;;;;;;:::o;77:28:0:-;;;;:::o;76:27:1:-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\nimport \"./Owned.sol\";\n\ncontract Asset is Owned{\n\t\n\tbytes32 public uuid = \"uuid\";\n\n\tstruct Properties {\n\t\tbytes32 name;\n\t\t// Additional Properties\n\n\t}\n\n\tProperties properties;\n\n\tfunction Asset(bytes32 _uuid) public{\n\t\tuuid = _uuid;\n\t}\n\n}",
   "sourcePath": "/home/vincent/Documents/workspace/asset-transfer/contracts/Asset.sol",
   "ast": {
     "absolutePath": "/home/vincent/Documents/workspace/asset-transfer/contracts/Asset.sol",
     "exportedSymbols": {
       "Asset": [
-        9
+        23
       ]
     },
-    "id": 10,
+    "id": 24,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -134,8 +153,8 @@
         "file": "./Owned.sol",
         "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 10,
-        "sourceUnit": 100,
+        "scope": 24,
+        "sourceUnit": 114,
         "src": "26:21:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -149,10 +168,10 @@
               "id": 3,
               "name": "Owned",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 99,
+              "referencedDeclaration": 113,
               "src": "67:5:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Owned_$99",
+                "typeIdentifier": "t_contract$_Owned_$113",
                 "typeString": "contract Owned"
               }
             },
@@ -162,28 +181,183 @@
           }
         ],
         "contractDependencies": [
-          99
+          113
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9,
+        "id": 23,
         "linearizedBaseContracts": [
-          9,
-          99
+          23,
+          113
         ],
         "name": "Asset",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
+            "constant": false,
+            "id": 7,
+            "name": "uuid",
+            "nodeType": "VariableDeclaration",
+            "scope": 23,
+            "src": "77:28:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "77:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "75756964",
+              "id": 6,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "99:6:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_72ee0e84a99e5b3cb20adcdbe548dd1ab3bb535bdd690595e43594707778be82",
+                "typeString": "literal_string \"uuid\""
+              },
+              "value": "uuid"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Asset.Properties",
+            "id": 10,
+            "members": [
+              {
+                "constant": false,
+                "id": 9,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 10,
+                "src": "131:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 8,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "131:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Properties",
+            "nodeType": "StructDefinition",
+            "scope": 23,
+            "src": "109:66:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "properties",
+            "nodeType": "VariableDeclaration",
+            "scope": 23,
+            "src": "178:21:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Properties_$10_storage",
+              "typeString": "struct Asset.Properties storage ref"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 11,
+              "name": "Properties",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10,
+              "src": "178:10:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Properties_$10_storage_ptr",
+                "typeString": "struct Asset.Properties storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
             "body": {
-              "id": 7,
+              "id": 21,
               "nodeType": "Block",
-              "src": "100:13:0",
-              "statements": []
+              "src": "239:20:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 19,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 17,
+                      "name": "uuid",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "243:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 18,
+                      "name": "_uuid",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14,
+                      "src": "250:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "243:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 20,
+                  "nodeType": "ExpressionStatement",
+                  "src": "243:12:0"
+                }
+              ]
             },
             "documentation": null,
-            "id": 8,
+            "id": 22,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -191,39 +365,66 @@
             "name": "Asset",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5,
+              "id": 15,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "91:2:0"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14,
+                  "name": "_uuid",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "218:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 13,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "218:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "217:15:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6,
+              "id": 16,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "100:0:0"
+              "src": "239:0:0"
             },
-            "scope": 9,
-            "src": "77:36:0",
+            "scope": 23,
+            "src": "203:56:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10,
-        "src": "49:67:0"
+        "scope": 24,
+        "src": "49:213:0"
       }
     ],
-    "src": "0:116:0"
+    "src": "0:262:0"
   },
   "legacyAST": {
     "absolutePath": "/home/vincent/Documents/workspace/asset-transfer/contracts/Asset.sol",
     "exportedSymbols": {
       "Asset": [
-        9
+        23
       ]
     },
-    "id": 10,
+    "id": 24,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -242,8 +443,8 @@
         "file": "./Owned.sol",
         "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 10,
-        "sourceUnit": 100,
+        "scope": 24,
+        "sourceUnit": 114,
         "src": "26:21:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -257,10 +458,10 @@
               "id": 3,
               "name": "Owned",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 99,
+              "referencedDeclaration": 113,
               "src": "67:5:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Owned_$99",
+                "typeIdentifier": "t_contract$_Owned_$113",
                 "typeString": "contract Owned"
               }
             },
@@ -270,28 +471,183 @@
           }
         ],
         "contractDependencies": [
-          99
+          113
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9,
+        "id": 23,
         "linearizedBaseContracts": [
-          9,
-          99
+          23,
+          113
         ],
         "name": "Asset",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
+            "constant": false,
+            "id": 7,
+            "name": "uuid",
+            "nodeType": "VariableDeclaration",
+            "scope": 23,
+            "src": "77:28:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "77:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "75756964",
+              "id": 6,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "99:6:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_72ee0e84a99e5b3cb20adcdbe548dd1ab3bb535bdd690595e43594707778be82",
+                "typeString": "literal_string \"uuid\""
+              },
+              "value": "uuid"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Asset.Properties",
+            "id": 10,
+            "members": [
+              {
+                "constant": false,
+                "id": 9,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 10,
+                "src": "131:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 8,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "131:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Properties",
+            "nodeType": "StructDefinition",
+            "scope": 23,
+            "src": "109:66:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "properties",
+            "nodeType": "VariableDeclaration",
+            "scope": 23,
+            "src": "178:21:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Properties_$10_storage",
+              "typeString": "struct Asset.Properties storage ref"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 11,
+              "name": "Properties",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10,
+              "src": "178:10:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Properties_$10_storage_ptr",
+                "typeString": "struct Asset.Properties storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
             "body": {
-              "id": 7,
+              "id": 21,
               "nodeType": "Block",
-              "src": "100:13:0",
-              "statements": []
+              "src": "239:20:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 19,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 17,
+                      "name": "uuid",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "243:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 18,
+                      "name": "_uuid",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14,
+                      "src": "250:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "243:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 20,
+                  "nodeType": "ExpressionStatement",
+                  "src": "243:12:0"
+                }
+              ]
             },
             "documentation": null,
-            "id": 8,
+            "id": 22,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -299,30 +655,57 @@
             "name": "Asset",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5,
+              "id": 15,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "91:2:0"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14,
+                  "name": "_uuid",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "218:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 13,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "218:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "217:15:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6,
+              "id": 16,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "100:0:0"
+              "src": "239:0:0"
             },
-            "scope": 9,
-            "src": "77:36:0",
+            "scope": 23,
+            "src": "203:56:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10,
-        "src": "49:67:0"
+        "scope": 24,
+        "src": "49:213:0"
       }
     ],
-    "src": "0:116:0"
+    "src": "0:262:0"
   },
   "compiler": {
     "name": "solc",
@@ -332,10 +715,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xf6e3b6936db073b7283920378eaececb9d601f58",
-      "transactionHash": "0x5870f2eee9dfa4b7bc4044dfadb9bb662ab54fcc274dc1976e3b0132dbc22fc9"
+      "address": "0x95bcd8874b1a537d2151da329e69595d4444cd46",
+      "transactionHash": "0x5778cadae605a2d3298e5fa5673da2bbf35acaa41fe45ab952258226907f83b0"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-03T01:05:36.126Z"
+  "updatedAt": "2018-04-11T23:43:29.944Z"
 }

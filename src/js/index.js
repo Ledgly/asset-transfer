@@ -11,6 +11,11 @@ if (typeof web3 !== 'undefined') {
 $.getJSON('../Asset.json', function(data){
 	abi = data['abi'];
 	TradingContract = web3.eth.contract(abi);
-	contractInstance = TradingContract.at('0xf6e3b6936db073b7283920378eaececb9d601f58');
-	console.log(contractInstance)
+	contractInstance = TradingContract.at('0xde37a6b9624f67f98b19b3702756436f2c5f0b04');
+	console.log(contractInstance);
+
+	contractInstance.method.uuid().call(function(err,res) {
+		console.log("data:" + res);
+		console.log("stuff:" + err);
+	});
 });
