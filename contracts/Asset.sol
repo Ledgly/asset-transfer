@@ -28,7 +28,7 @@ contract Asset is Owned{
 	Properties properties;
 
 	// Constructor //
-	function Asset(uint _serial, bytes32 _name, uint _created, uint8 _dependency, 
+	function Asset(bytes32 _serial, bytes32 _name, uint _created, uint8 _dependency, 
 		bytes32 _creator, address _location, uint _totalRelease, uint _releaseNumber,
 		uint8 _unlockPaymentCode, bool _isFinal) public{
 
@@ -47,7 +47,7 @@ contract Asset is Owned{
 		properties.isFinal = _isFinal;
 
 		// Events // 
-		emit Sent(currentOwner, _totalRelease, _releaseNumber);
+		//emit Sent(currentOwner, _totalRelease, _releaseNumber);
 
 	}
 
@@ -71,7 +71,7 @@ contract Asset is Owned{
 	}
 
 	modifier beforeExpiry(){
-		if (expiry >= now) { // NOTE: Now does not mean current time.
+		if (expiry >= now) {
 			_;
 		}
 	}
