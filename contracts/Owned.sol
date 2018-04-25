@@ -5,12 +5,12 @@ contract Owned {
 	address public currentOwner;
 	address public pendingOwner;
 
-	// constructor //
+	// Constructor //
 	function Owned() public {
 		currentOwner = msg.sender;
 	}
 
-	// modifier //
+	// Modifier //
 	modifier onlyOwner(){
 		if (currentOwner == msg.sender){
 			_;
