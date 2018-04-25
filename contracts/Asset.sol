@@ -76,18 +76,34 @@ contract Asset is Owned{
 		}
 	}
 
-	// Functions //
+	// Direct Purchase //
 
-	function setForSale(uint _price, uint _expiry) onlyOwner public returns(bool) {
+	function setForSale(uint _price, uint _expiry) onlyOwner external returns(bool) {
 		expiry = _expiry;
 		price = _price;
 		sellState = State.forSale;
 		return true;
 	}
 
-	function buyAsset() beforeExpiry public payable returns (bool){
-		//TODO
+	function buyAsset() beforeExpiry isForSale external payable returns (bool){
+		require(msg.value >= price);
+
+		// Overpayment - we need a method of withdrawl for overpaid ethers. (and keeping track of them)
+		// this is so that people who pay extra for gas can be refunded
+
+		// Change Ownership - We need to be able to call changeOwnership in Owned.sol; but the function call
+		// is only available for the owner of Asset.
+
+		return true;
+
 	}
+
+	// Auction //
+
+	// We need to add the functionality for the auction likely following the resource from the meeting.
+	// If there is a time-based control, we need an accurate method of determining the time. now() only returns
+	// the current block time which is inaccurate to some degree.
+
 
 
     event Sent(address from, uint totalRelease, uint releaseNumber);
